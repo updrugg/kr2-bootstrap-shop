@@ -1,0 +1,29 @@
+
+:root {
+  --bs-success: #699407;
+  --bs-success-rgb: 105, 148, 7;
+}
+
+.btn {
+  transition: all 0.2s ease-in-out;
+}
+
+.img-thumbnail {
+  transition: border-color 0.2s, opacity 0.2s;
+}
+
+.img-thumbnail:hover {
+  border-color: var(--bs-success);
+  opacity: 0.8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.form-control:focus, 
+.form-select:focus {
+  border-color: var(--bs-success);
+  box-shadow: 0 0 0 0.25rem rgba(105, 148, 7, 0.25);
+}

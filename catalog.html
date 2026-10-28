@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог товаров — Leafy corner</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-success" href="index.html">
+        <img src="images/logo.png" alt="Logo" height="30">
+        Leafy corner
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="catalog.html">Каталог</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#reviews">Отзывы</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5 flex-grow-1">
+    
+    <nav aria-label="breadcrumb" class="mb-4">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html" class="text-success text-decoration-none">Главная</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Каталог</li>
+      </ol>
+    </nav>
+
+    <div class="mb-5">
+      <h1 class="display-6 fw-bold mb-3">Каталог товаров</h1>
+      <p class="text-muted fs-5">В нашем каталоге — редкие и популярные экзотические растения для дома. Все саженцы выращены в собственном питомнике и проверены перед отправкой.</p>
+    </div>
+
+    <div class="row g-4">
+      
+      <aside class="col-lg-3">
+        <div class="card shadow-sm border-0 sticky-top" style="top: 20px;">
+          <div class="card-body p-4">
+            <h5 class="card-title mb-4 fw-bold">Фильтры</h5>
+            
+            <form>
+              <div class="mb-4">
+                <h6 class="text-muted text-uppercase mb-3" style="font-size: 0.8rem; letter-spacing: 0.5px;">Категория</h6>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="catAll" checked>
+                  <label class="form-check-label" for="catAll">Все товары</label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="catPopular">
+                  <label class="form-check-label" for="catPopular">Популярные</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="catNew">
+                  <label class="form-check-label" for="catNew">Новинки</label>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h6 class="text-muted text-uppercase mb-3" style="font-size: 0.8rem; letter-spacing: 0.5px;">Цена, руб.</h6>
+                <div class="d-flex gap-2 align-items-center">
+                  <input type="number" class="form-control form-control-sm" placeholder="От" min="0">
+                  <span class="text-muted">—</span>
+                  <input type="number" class="form-control form-control-sm" placeholder="До" min="0">
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-success w-100">Применить</button>
+              <button type="reset" class="btn btn-outline-secondary w-100 mt-2">Сбросить</button>
+            </form>
+
+          </div>
+        </div>
+      </aside>
+
+      <div class="col-lg-9">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+          
+          <div class="col">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="images/ficus variegatny.webp" class="card-img-top bg-light" alt="Фикус Септика Вайт">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 card-title">Фикус Септика Вайт</h3>
+                <p class="card-text text-muted flex-grow-1">Редкий вариегатный сорт с бело-зелёными листьями. Неприхотлив.</p>
+                <p class="fw-bold fs-5 text-success mb-3">1000 руб.</p>
+                <a href="goods/ficus.html" class="btn btn-success w-100 mt-auto">Подробнее</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="images/monstera.webp" class="card-img-top bg-light" alt="Монстера Деликатесная">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 card-title">Монстера Деликатесная</h3>
+                <p class="card-text text-muted flex-grow-1">Крупные резные листья, эффектный вид, неприхотлива в уходе.</p>
+                <p class="fw-bold fs-5 text-success mb-3">2500 руб.</p>
+                <a href="goods/monstera.html" class="btn btn-success w-100 mt-auto">Подробнее</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="images/myrt.webp" class="card-img-top bg-light" alt="Мирт Комнатный Вариегатный">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 card-title">Мирт Комнатный Вариегатный</h3>
+                <p class="card-text text-muted flex-grow-1">Ароматные пёстрые листья, легко формируется в куст. Неприхотлив.</p>
+                <p class="fw-bold fs-5 text-success mb-3">1200 руб.</p>
+                <a href="goods/myrt.html" class="btn btn-success w-100 mt-auto">Подробнее</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="images/philodendron.webp" class="card-img-top bg-light" alt="Филодендрон Лазящий">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 card-title">Филодендрон Лазящий</h3>
+                <p class="card-text text-muted flex-grow-1">Лиана с крупными сердцевидными листьями. Быстро растёт, любит опору.</p>
+                <p class="fw-bold fs-5 text-success mb-3">1800 руб.</p>
+                <a href="goods/philodendron.html" class="btn btn-success w-100 mt-auto">Подробнее</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="images/pilea.webp" class="card-img-top bg-light" alt="Пилея Пеперомиевидная">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 card-title">Пилея Пеперомиевидная</h3>
+                <p class="card-text text-muted flex-grow-1">Округлые листья-монетки, быстро разрастается. Неприхотлива.</p>
+                <p class="fw-bold fs-5 text-success mb-3">900 руб.</p>
+                <a href="goods/pilea.html" class="btn btn-success w-100 mt-auto">Подробнее</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="images/dionaea.webp" class="card-img-top bg-light" alt="Венерина Мухоловка">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 card-title">Венерина Мухоловка</h3>
+                <p class="card-text text-muted flex-grow-1">Хищное растение с ловушками-«челюстями». Яркий живой экземпляр.</p>
+                <p class="fw-bold fs-5 text-success mb-3">1500 руб.</p>
+                <a href="goods/dionaea.html" class="btn btn-success w-100 mt-auto">Подробнее</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-4 mt-auto">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <div class="col-12 col-md-6">
+          <p class="mb-0">&copy; 2026 Leafy corner. Все права защищены.</p>
+        </div>
+        <div class="col-12 col-md-6 text-md-end">
+          <a class="text-white text-decoration-none me-3" href="index.html">Главная</a>
+          <a class="text-white text-decoration-none" href="contacts.html">Контакты</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

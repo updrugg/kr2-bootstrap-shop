@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leafy corner — Магазин экзотических растений</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-success" href="index.html">
+        <img src="images/logo.png" alt="Logo" height="30">
+        Leafy corner
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Переключить навигацию">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacts.html">Контакты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reviews">Отзывы</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-grow-1">
+
+    <section class="container my-5">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-lg-6">
+          <h1 class="display-5 fw-bold mb-3">Магазин экзотических растений</h1>
+          <p class="lead text-muted mb-4">
+            Откройте для себя удивительный мир экзотической флоры. В нашем магазине вы найдете редкие виды растений, которые привнесут в ваш дом яркие краски и уникальную атмосферу.
+          </p>
+          <a class="btn btn-success btn-lg px-4" href="catalog.html">Перейти к товарам</a>
+        </div>
+        <div class="col-12 col-lg-6">
+          <img src="images/im.webp" alt="Экзотические растения" class="img-fluid rounded-4 shadow-sm w-100" style="object-fit: cover; max-height: 400px;">
+        </div>
+      </div>
+    </section>
+
+    <section class="container my-5 py-4 bg-white rounded-4 shadow-sm">
+      <h2 class="text-center mb-4">Почему выбирают нас</h2>
+      <div class="row g-4 p-3">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="p-4 border rounded h-100 bg-light">
+            <h3 class="h5 text-success">Здоровые саженцы</h3>
+            <p class="mb-0 text-muted">Каждое растение проходит осмотр перед отправкой. Приезжает крепким и готовым к жизни дома.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="p-4 border rounded h-100 bg-light">
+            <h3 class="h5 text-success">Бережная упаковка</h3>
+            <p class="mb-0 text-muted">Используем специальные коробки и фиксацию грунта, чтобы растение не пострадало в дороге.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="p-4 border rounded h-100 bg-light">
+            <h3 class="h5 text-success">Доставка по РФ</h3>
+            <p class="mb-0 text-muted">Отправляем в любой регион. По Москве — курьером за 1–2 дня, в другие города — Почтой и СДЭК.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="p-4 border rounded h-100 bg-light">
+            <h3 class="h5 text-success">Помощь с уходом</h3>
+            <p class="mb-0 text-muted">Расскажем, как поливать и что делать, если растение загрустило. Консультации бесплатные.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container my-5">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="mb-0">Популярные товары</h2>
+        <a class="btn btn-outline-success" href="catalog.html">Все товары</a>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="images/ficus variegatny.webp" class="card-img-top bg-light" alt="Фикус">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5 card-title">Фикус Септика Вайт</h3>
+              <p class="card-text text-muted flex-grow-1">Редкий вариегатный сорт с бело-зелёными листьями. Неприхотлив.</p>
+              <p class="fw-bold fs-5 text-success mb-3">1000 руб.</p>
+              <a href="goods/ficus.html" class="btn btn-success w-100 mt-auto">Подробнее</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="images/monstera.webp" class="card-img-top bg-light" alt="Фикус">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5 card-title">Монстера Деликатесная</h3>
+              <p class="card-text text-muted flex-grow-1">Крупные резные листья, эффектный вид, неприхотлива в уходе.</p>
+              <p class="fw-bold fs-5 text-success mb-3">2500 руб.</p>
+              <a href="goods/monstera.html" class="btn btn-success w-100 mt-auto">Подробнее</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="images/dionaea.webp" class="card-img-top bg-light" alt="Фикус">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5 card-title">Венерина Мухоловка</h3>
+              <p class="card-text text-muted flex-grow-1">Хищное растение с ловушками-«челюстями». Яркий экземпляр.</p>
+              <p class="fw-bold fs-5 text-success mb-3">1500 руб.</p>
+              <a href="goods/dionaea.html" class="btn btn-success w-100 mt-auto">Подробнее</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="container my-5 py-4" id="reviews">
+      <h2 class="text-center mb-4">Отзывы покупателей</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 45px; height: 45px;">А</div>
+              <div>
+                <strong class="d-block">Анна</strong>
+                <small class="text-muted">март 2026</small>
+              </div>
+            </div>
+            <p class="card-text flex-grow-1">Заказывала монстеру — приехала в идеальном состоянии, упакована в коробку с мягким наполнителем. Уже дала первый новый лист!</p>
+            <div class="text-warning fs-5">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 45px; height: 45px;">Д</div>
+              <div>
+                <strong class="d-block">Дмитрий</strong>
+                <small class="text-muted">февраль 2026</small>
+              </div>
+            </div>
+            <p class="card-text flex-grow-1">Взял фикус и пилею. Продавец подробно рассказал, как ухаживать, что делать с поливом. Растения чувствуют себя отлично.</p>
+            <div class="text-warning fs-5">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 45px; height: 45px;">М</div>
+              <div>
+                <strong class="d-block">Мария</strong>
+                <small class="text-muted">январь 2026</small>
+              </div>
+            </div>
+            <p class="card-text flex-grow-1">Венерина мухоловка — подарок для сына. Он в восторге, каждый день проверяет ловушки. Доставили быстро, всё целое.</p>
+            <div class="text-warning fs-5">★★★★☆</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-dark text-white py-4 mt-auto">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <div class="col-12 col-md-6">
+          <p class="mb-0">&copy; 2026 Leafy corner. Все права защищены.</p>
+        </div>
+        <div class="col-12 col-md-6 text-md-end">
+          <a class="text-white text-decoration-none me-3" href="catalog.html">Каталог</a>
+          <a class="text-white text-decoration-none" href="contacts.html">Контакты</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script 
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+</body>
+</html>
